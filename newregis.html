@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+background-image: url("http://designrouge.com/wp-content/uploads/2013/03/Yellowed-Parchment-Paper-paper-texture.jpg");
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 30%;
+    background-color: red;
+    color: white;
+    padding: 8px 10px;
+    margin: 8px 280px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+div {
+    border-radius: 5px;
+    background-color: #abcabc;
+    padding: 12px 20px;
+	width: 100%
+	margin : 2px 4px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+	margin : 0 250px;
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+   background-color: white;
+    margin: 25px 170px;
+    padding: 12px 10px;
+    border: 1px solid #000;
+    width: 30%;
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+button
+{
+margin: 1px 420px;
+color: white;
+background-color : red;
+width : 10%;
+padding : 8px 8px;
+border-radius: 8px;
+}
+h1
+{
+text-align: center;
+color: #9F0843;
+}
+a:link, a:visited {
+    background-color: red;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	width: 10%;
+	border-radius: 8px;
+	 float: right;
+	}
+a:hover, a:active {
+    background-color: hotpink;
+
+</style>
+<body>
+
+<h1>New Registration</h1>
+<a href="file:///C:/Users/Admin/Desktop/project.html/Passport1(Home%20page).html" target="_blank">GO BACK</a>
+
+<div>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname">
+
+    <label for="dob">Date of Birth</label>
+    <input type="text" id="dob" name="dob">
+
+    <label for="uname">Set Username</label>
+    <input type="text" id="uname" name="username">
+
+    <label for="pswrd">Set Password</label>
+    <input type="text" id="pswrd" name="pswrd">
+  
+    <label for="emailid">Mail-ID</label>
+    <input type="text" id="mailid" name="mailid">
+<br>
+<br>
+
+<a href="file:///C:/Users/Admin/Desktop/project.html/Passport1(Home%20page).html" target="_blank">Cancel</a>
+
+
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">SUBMIT</button>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">x</span>
+    <p> Submitted Successfully...!</p>
+	<p> Click "GO BACK"</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</form>
+</div>
+
+</body>
+</html>
